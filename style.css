@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #2b2a33;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.container{
+    padding: 3vh;
+}
+.content{
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    width: 80%;
+}
+.logoName{
+    color: #fff;
+    font-family: 'Alkalami', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    text-align: CENTER;
+}
+.headerImg{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.botoes{
+    display: flex;
+    min-width: auto;
+    gap: 15px;
+    justify-content: space-around;
+    align-self: center;
+    color: #fff;
+    font-family: 'Alkalami', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+.botoes > .funcoes{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Alkalami', serif;
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    min-width: auto;
+    border: 2px solid transparent;
+}
+.funcoes:hover{
+    cursor: pointer;
+    color: powderblue;
+    transition: 0.3s;
+}
+.mainContent{
+    display: flex;
+    flex-direction: row;
+}
+.conteudo{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;;
+    width: 45%;
+    text-align: center;
+    padding-top: 10vh;
+    padding-left: 5.5vh;
+    height: fit-content;
+}
+.inputs{
+    display: flex;
+    justify-content: start;
+}
+
+.imgBig{
+    width: 55%;
+}
+.conteudo >.inputs{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    color: #fff;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px 15px;
+    
+}
+.text{
+    font-size: 20px;
+    height: 50px;
+    width: 40%;
+    border-radius: 15px;
+}
+::placeholder{
+    text-align: center;
+}
+input {
+  all: unset;
+  background-color: #eaf3ef;
+  color: #0e0e11;
+}
+#email{
+    margin-top: 5vh;
+    width: 88%;
+}
+.genero{
+    background-color: white;
+    color: white;
+}
+.inputs > #passwordType{
+    margin-top: 5vh;
+}
+.inputs > #submitenvio{
+    cursor: pointer;
+    background-color: #ffe779;
+    font-size: 20px;
+    height: 50px;
+    width: 30%;
+    border-radius: 15px;
+    margin-top: 5vh;
+}
+@media (max-width: 1792px) {
+    .botoes > .funcoes{
+        font-size: 14px;
+    }
+}
+@media (max-width: 1697px) {
+    .botoes > .funcoes{
+        font-size: 13px;
+    }
+}
+@media (max-width: 1600px) {
+    .botoes > .funcoes{
+        font-size: 13px;
+    }
+}
+@media (max-width: 1504px) {
+    .botoes > .funcoes{
+        font-size: 13px;
+    }
+}
+@media (max-width: 840px) {
+    .botoes > .funcoes{
+        font-size: 13px;
+    }
+    .header{
+        width: 90%;
+        padding: 30px;
+    }
+    .mainContent{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logoName{
+        font-size: 25px;
+    }
+    .conteudo{
+        font-size: 14px;
+        width: 100%;
+    }
+    .text{
+        font-size: 10px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+}
+@media (max-width: 700px) {
+    .botoes > .funcoes{
+        font-size: 13px;
+    }
+    .header{
+        width: 80%;
+        padding: 30px;
+    }
+    .content{
+        margin-left: 5vh;
+    }
+    .mainContent{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logoName{
+        font-size: 25px;
+    }
+    .conteudo{
+        font-size: 14px;
+        width: 100%;
+        padding-top: 1vh
+    }
+    .text{
+        font-size: 10px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    .conteudo{
+        width: 100%;
+    }
+    .text{font-size: 15px;}
+    .inputs > #submitenvio{
+        font-size: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .botoes > .funcoes{
+        font-size: 13px;
+    }
+    .header{
+        width: 75%;
+        padding: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .botoes{
+        padding-top: 3vh;
+        margin-left: 12vh;
+    }
+    .botoes #funcoes{
+        font-size: 20px;
+    }
+    .content{
+        margin-left: 5vh;
+    }
+    #hrContent{
+        display: none;
+    }
+    .mainContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-right: 3vh;
+    }
+    .logoName{
+        color: #fff;
+        font-family: 'Alkalami', serif;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        margin-left: 25%;
+        text-align: CENTER;
+        
+    }
+    h1{
+        justify-content: center;
+    }
+    .headerImg{
+        display: none;
+    }
+    .conteudo{
+        font-size: 14px;
+        width: 100%;
+        padding-top: 1vh
+    }
+    .inputs > .text{
+        font-size: 13px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    .conteudo{
+        width: 100%;
+    }
+    .text{font-size: 15px;}
+    .inputs > #submitenvio{
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+    .header{
+        
+    }
+    .logoName{
+        margin-left: 4vh;
+    }
+    .mainContent{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        margin-right: 3vh;
+    }
+    .mainContent > #inputsId{
+        min-width: 100px;
+    }
+}
+@media(max-width:375px){
+    .header{
+        padding: 0;
+        width: 100%;
+    }
+    .logoName{
+        margin-left: 0;
+    }
+    .botoes{
+        padding: 0;
+        margin: 0;
+        font-size: 5px;
+    }
+    .text{
+        font-size: 8px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+    .botoes > .funcoes{
+        font-size: 1px;
+    }
+    .conteudo{
+        font-size: 10px;
+    }
+}
+
